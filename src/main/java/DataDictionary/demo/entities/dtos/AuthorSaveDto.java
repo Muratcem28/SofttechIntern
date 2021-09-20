@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookSaveDto {
+public class AuthorSaveDto {
+
     private String name;
-    private int price;
-    private String publishedAt;
-    private int authorId;
+    private Date date;
+
 }

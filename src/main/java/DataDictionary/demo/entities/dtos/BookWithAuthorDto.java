@@ -13,4 +13,5 @@ public class BookWithAuthorDto {
     private int id;
     private String bookName;
     private String authorName;
+    private String publishingHouseName;
 }

@@ -25,10 +25,13 @@ public class Author {
     @Column (name = "name")
     private String name;
 
-    @Column
-    @Temporal(TemporalType.DATE)
-    private Date yearOfBirth;
+    @Column (name = "date")
+    //@Temporal(TemporalType.DATE)
+    private Date date;
 
     @OneToMany(mappedBy = "author")
     private List<Book> books;
+
+    @ManyToMany(mappedBy = "authors")
+    private List<PublishingHouse> publishingHouses;
 }

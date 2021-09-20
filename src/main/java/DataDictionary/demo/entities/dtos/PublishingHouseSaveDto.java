@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookSaveDto {
+public class PublishingHouseSaveDto {
     private String name;
-    private int price;
-    private String publishedAt;
+    private String address;
+    private String mail;
     private int authorId;
 }

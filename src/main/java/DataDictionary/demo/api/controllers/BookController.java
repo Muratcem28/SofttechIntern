@@ -16,7 +16,7 @@ public class BookController {
 
     private final BookService bookService;
     private final AuthorService authorService;
-    private String book;
+//    private String book;
 
     @Autowired
     public BookController(BookService bookService, AuthorService authorService) {
